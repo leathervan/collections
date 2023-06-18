@@ -2,7 +2,11 @@
 #include "Vector.h"
 
 int main() {
-    Vector<double> vector(6);
+
+    Vector<double> vector;
+    std::cout << vector << std::endl;
+    std::cout << "is empty: " << vector.isEmpty() << "   size: " << vector.size() << "   capacity: " << vector.capacity() << std::endl;
+
     for (int i = 0; i < 50; ++i) {
         vector.push(i/2.0);
     }

@@ -12,9 +12,7 @@ private:
     T *v_array;
 
 public:
-    Vector();
-
-    Vector(int capacity);
+    Vector(int capacity = 5);
 
     virtual ~Vector();
 
