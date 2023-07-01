@@ -1,4 +1,7 @@
 #include "Vector.h"
+template class Vector<int>;
+
+template class Vector<double>;
 
 template<class T>
 Vector<T>::Vector(int capacity):v_capacity(capacity) {
@@ -110,8 +113,3 @@ T *Vector<T>::end() {
     return v_array + v_size;
 }
 
-template
-class Vector<int>;
-
-template
-class Vector<double>;
